@@ -7,11 +7,14 @@
     <meta name="description" content="This is the home page of my website">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
     <title>Miriam Desta's HTML Portfolio Body</title>
 </head>
 <body>
    <!-- for the header -->
-    <header>
+    <header id="navigation">
         <!-- for the navigation -->
         <div> 
         <!--for hyperlink name logo-->  
@@ -28,19 +31,19 @@
         </div>
     </header>
 
-    <main>
+    <main id="hero"> <!--is there where the hero id would go since it does not include navigation???????-->
          <!-- for the hero section-->
         <div>
             <div>
                 <h1>Hi, i'm Miriam! 
                     <span>UX Researcher &amp; Designer in DC. </span>
                     </h1>
-                <p>short introduction</p>
+                <p>Passionate about creating cutting-edge and delightful experiences! At the intersection of design, code and interplay, I help brands stand out in the digital world!</p>
             </div>
          </div>
 
          <!-- for works/projects-->
-         <div>
+         <div id="work">
             <div>
                 <h2>my work/projects</h2>
                 <!--start project 1 Roomy-->
@@ -54,7 +57,7 @@
                     <div> <!--open second column used for text-->
                         <h3>Roomy</h3> <!--heading for the project-->
                         <p>Empowering people with the tools and expertise to create spaces they love!</p>
-                        <a href="roomy.html">read more</a> <!--button or link-->
+                        <a href="roomy.html" class="button">read more</a> <!--button or link-->
                     </div> <!--end second column-->
                 </div> <!--end row holding 2 columns for project-->
 
@@ -69,7 +72,7 @@
                     <div> <!--open second column used for text-->
                         <h3>UWord</h3> <!--heading for the project-->
                         <p>A better, more exciting way to learn new vocabulary on-the-go! </p>
-                        <a href="#">read more</a> <!--button or link-->
+                        <a href="#" class="button">read more</a> <!--button or link-->
                     </div> <!--end second column-->
                 </div> <!--end row holding 2 columns for project-->
 
@@ -84,10 +87,10 @@
     <footer id="contact">
         <div>
             <h2>Get in Touch</h2>
-            <p>Do you like my work and want to discuss opportunities? Let's connect! Call: <a href="2487593116">248-759-3116</a> or skype me at <a href="https://join.skype.com/invite/d84NjLsMgCD2">hello.miriamdesta</a> Prefer sending an email?
+            <p>Do you like my work and want to discuss opportunities? Let's connect! Call: <a href="tel:248-759-3116 " class="button contact">248-759-3one16</a> or skype me at <a href="https://join.skype.com/invite/d84NjLsMgCD2" class="button contact">hello.miriam</a> Prefer sending an email?
             </p>
             <div>
-                <a href="malito:mwd3kf@virginia.edu">email me</a>
+                <a href="malito:mwd3kf@virginia.edu" class="button contact">email me</a>
             </div>
             <div>
                 <!--social media layout/placeholders-->

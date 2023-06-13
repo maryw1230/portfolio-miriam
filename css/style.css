@@ -7,6 +7,10 @@ Magenta: #b71567;
 White: #ffffff
 */
 
+* {
+    box-sizing: border-box;
+  }
+
 body {
     background-color: #ffffff;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -14,9 +18,9 @@ body {
     font-weight: 450;
     line-height: 1.6; /*sets line height to 1.6 * the font size */
     color: #0e1b21;
-} */
+}
 
-#hero, #navigation {
+hero, #navigation {
     background-color: #999d9e;
     color: #ffffff;
 }
@@ -66,11 +70,11 @@ a:focus {
 
 a:visited { /* visited link */
     color: #ffffff;
-  }
+}
 
 a:active { /* selected link */
     color: #455ce9;
-  }
+}
 
 
 .button {
@@ -90,7 +94,7 @@ a:active { /* selected link */
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
     background-color: #085e36;
-  }
+}
 
 .button.contact {
     background-color: transparent;
@@ -102,5 +106,8 @@ a:active { /* selected link */
 .button.contact:hover {
     background-color: #085e36;
     color: #ffffff;
-  }
-  
+}
+
+.social {
+    width: 5%;
+}

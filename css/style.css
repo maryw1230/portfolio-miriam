@@ -258,7 +258,7 @@ footer a:active {
     font-size: 18px ;
 }
 
-#aboutpicture {
+#aboutpicture, #aboutpictures {
     width: 100%;
     max-width: 100%;
     height: auto;

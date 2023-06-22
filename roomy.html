@@ -10,13 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
     <title>Roomy Interior Design App</title>
 </head>
 <body id="roomypage">
    <!-- for the header -->
     <header>
         <!-- for the navigation -->
-        <div class="container" id="navigation"> 
+        <div class="container highlightTextOut" id="navigation"> 
         <!--for hyperlink name logo-->  
        <a class="logo" href="#"> My Name Logo</a>
        <a href="index.html">
@@ -35,33 +37,38 @@
         <div class="container" id="roomy">
             <div>
              <!-- for the Roomy heading -->
-             <h1>Roomy </h1>
+            <!-- <h1>Roomy </h1> -->
             </div>
 
 
         
         <!--for the main project photo/ overview-->
         <div>
-            <div>
-                <picture>
-                    <source srcset="img/roomy/roomy-case-study/roomy_heading@1x.jpg" media="(max-width:767px)">
-                    <img src="img/roomy/roomy-case-study/roomy_heading@2x.jpg" alt="Roomy Interior Design Mockup">
-                </picture>
-                
-                <!--Roomy blurb-->
-                <div>
-                    <h2>Roomy is an intuitive, budget-friendly interior design experience for beginners and experts alike. Roomy gives people comprehensive design inspiration, access to renowned experts, and help verbalizing their vision, so they can create the spaces they love.</h2>
-                </div>
+               <div class="row">
+                    
+                    <!--Roomy blurb-->
+                    <div class="col-md-6 col-lg-5">
+                        <h1>Roomy </h1>
+                        <h3>Roomy is an intuitive, budget-friendly interior design experience for beginners and experts alike. Roomy gives people comprehensive design inspiration, access to renowned experts, and help verbalizing their vision, so they can create the spaces they love.</h3>
+                    </div>
+
+                    <div class="col-md-6 col-lg-5">
+                        <picture>
+                            <source srcset="img/roomy/roomy-case-study/roomy_heading@1x.jpg" media="(max-width:767px)">
+                            <img src="img/roomy/roomy-case-study/roomy_heading@2x.jpg" alt="Roomy Interior Design Mockup">
+                        </picture>
+                        </div>
+                </div>     
 
 
 
                 <!--start project overview-->
                 <div class="row"> <!--open row holding 2 columns-->
-                    <div> <!--open 1st column holding title-->
+                    <div class="col-md-6 col-lg-7"> <!--open 1st column holding title-->
                         <h2>Project origin</h2>
                     </div> <!--end first column-->
 
-                    <div> <!--open 2nd column holding paragraph-->
+                    <div class="col-md-6 col-lg-5"> <!--open 2nd column holding paragraph-->
                         <p>Roomy began as a high-level course project. I was asked to create a product that enabled anyone, anywhere to chat with an expert in a field. There were certain functional requirements to begin with, but there was also a lot of room to create my own innovative approach. I chose to create an interior design responsive web app and was the UX Researcher and Designer for the project.</p>
                         <p>I wanted to create a product that was transformative in the services and experience it gave users, and to do so I put my user-focused foot forward!</p>
                     </div> <!--end 2nd column-->
@@ -71,7 +78,7 @@
 
                 <!--start role/timeline overview-->
                 <div class="row"> <!--open row holding 3 columns-->
-                    <div> <!--open 1st column holding role-->
+                    <div class="col-md-4"> <!--open 1st column holding role-->
                         <h2>Role </h2>
                         <ul>
                             <li>UX Researcher</li>
@@ -80,13 +87,13 @@
                         </ul>
                     </div> <!--end 1st column-->
 
-                    <div> <!--open 2nd column holding context/year-->
+                    <div class="col-md-4"> <!--open 2nd column holding context/year-->
                         <h2>Context / year </h2>
                         <p>Career Foundry UX Design Course</p>
                         <p>2023</p>
                     </div> <!--end 2nd column-->
 
-                    <div> <!--open 3rd column holding Tool's Used-->
+                    <div class="col-md-4"> <!--open 3rd column holding Tool's Used-->
                         <h2>Tools used </h2>
                         <ul>
                             <li>Pen and paper</li>
@@ -100,7 +107,7 @@
 
                 <!--for Design Process Heading-->
                 <div class="container">
-                    <h2>My Design Process</h2>
+                    <h2 id="dp">My Design Process</h2>
                 </div>
 
 
@@ -109,10 +116,10 @@
                 <div id="designprocess" class="container">
                     <nav>
                         <ul>
-                            <li> <a class="button" href="#Understand&amp;Observe">Understand &amp; Observe</a></li>
+                            <li> <a class="button" href="#UO">Understand &amp; Observe</a></li>
                             <li> <a class="button" href="#POV">POV &amp; Ideate</a></li>
-                            <li> <a class="button" href="#Prototype">Prototype &amp; Test</a></li>
-                            <li> <a class="button" href="#FinalIteration">Final Iteration</a></li>
+                            <li> <a class="button" href="#PT">Prototype &amp; Test</a></li>
+                            <li> <a class="button" href="#FI">Final Iteration</a></li>
                         </ul>
                     </nav>
                 </div> 
@@ -165,20 +172,20 @@
                 <!--Understand & Observe Heading-->
                 
                 <div>
-                    <h2 id="Understand&amp;Observe">Understand &amp; Observe</h2>
+                    <h2 id="UO">Understand &amp; Observe</h2>
                 </div>
 
 
 
                 <!--The challenge blurb & img-->
                 <div class="row"> <!--open row holding 2 columns-->
-                    <div> <!--open 1st column holding The challenge-->
+                    <div class="col-md-6 col-lg-7"> <!--open 1st column holding The challenge-->
                         <h3>The Challenge</h3>
                         <p>According to People magazine, over 70% of Americans plan on redecorating their homes after spending more time at home post-2020. Now imagine this. You come home from work, theres kids to care for, homework for your Masters program to complete, and you look around and say I dont like my space; I want to redecorate. Where do you start?</p>
                         <p>People need help redesigning their spaces, but they need an intuitive, timely tool that does not break the bank. Roomy provides ample design inspiration, instant expert access, to integrate what they have, all in one place!</p>
                     </div> <!--end first column-->
 
-                    <div> <!--open 2nd column holding img-->
+                    <div class="col-md-6 col-lg-5"> <!--open 2nd column holding img-->
                         <picture>
                             <source srcset="img/roomy/roomy-case-study/roomy_challenge@1x.jpg" media="(max-width:767px)">
                             <img src="img/roomy/roomy-case-study/roomy_challenge@2x.jpg" alt="Man facing a challenge">
@@ -190,14 +197,14 @@
 
                 <!--The road and destination imgs-->
                 <div class="row"> <!--open row holding 2 columns-->
-                    <div> <!--open 1st column holding road ahead img-->
+                    <div class="col-md-6 col-lg-7"> <!--open 1st column holding road ahead img-->
                         <picture>
                             <source srcset="img/roomy/roomy-case-study/roomy_road_ahead@1x.jpg" media="(max-width:767px)">
                             <img src="img/roomy/roomy-case-study/roomy_road_ahead@2x.jpg" alt="The road ahead image">
                         </picture>
                     </div> <!--close 1st column-->
 
-                    <div> <!--open 2nd column holding destination img-->
+                    <div class="col-md-6 col-lg-5"> <!--open 2nd column holding destination img-->
                         <picture>
                             <source srcset="img/roomy/roomy-case-study/roomy_destination@1x.jpg" media="(max-width:767px)">
                             <img src="img/roomy/roomy-case-study/roomy_destination@2x.jpg" alt="The destination image">
@@ -209,12 +216,12 @@
 
                 <!--The road and destinations blurbs-->
                 <div class="row"> <!--open row holding 2 columns-->
-                    <div> <!--open 1st column holding road ahead blurb-->
+                    <div class="col-md-6 col-lg-7"> <!--open 1st column holding road ahead blurb-->
                         <p>With this project, I knew I would be wearing many hats. The process would be long and wrought with new discoveries , so I needed a road map to keep me moving forward.</p>
                         <p>First, I had to research the problem space. I'd couple information from competitors and surveying potential users to better understand the market and its' expectations. With these insights, I'd create user personas that embodied the wants and needs of my target audience. I'd begin building Roomy's Information architecture based on my findings, and iterate on any glaring issues people found. From here, initial wireframes were created which developed into a clickable prototype that was iterated upon after usability testing and peer feedback.</p>
                     </div> <!--close 1st column-->
 
-                    <div> <!--open 2nd column holding destination blurb-->
+                    <div class="col-md-6 col-lg-5"> <!--open 2nd column holding destination blurb-->
                         <p>With Roomy, I want to empower people with instant expert advice and quality tools, so they can create spaces they love while enjoying the process and not breaking the bank.</p>
                     </div> <!--close second column-->
                 </div> <!--end row holding 2 columns-->
@@ -223,7 +230,7 @@
 
                 <!--Understanding the market img & blurb-->
                 <div class="row"> <!--open row holding 2 columns-->
-                    <div> <!--open first column holding img/img tag-->
+                    <div class="col-md-6 col-lg-7"> <!--open first column holding img/img tag-->
                         <picture>
                             <source srcset="img/roomy/roomy-case-study/roomy_competitors@1x.jpg" media="(max-width:767px)">
                             <img src="img/roomy/roomy-case-study/roomy_competitors@2x.jpg" alt="Houzz and Havenly logos">
@@ -234,7 +241,7 @@
                         </div>
                     </div> <!--close first column-->
 
-                    <div> <!--open 2nd column holding blurb/ button-->
+                    <div class="col-md-6 col-lg-5"> <!--open 2nd column holding blurb/ button-->
                         <h3>Understanding the Market</h3>
                         <p>The first challenge was to correctly understand the wants and expectations of the market. I needed to understand what successful competitors were doing and identify areas of opportunity where Roomy could distinguish itself. I chose Houzz and Havenly as they offered similar services and had market success.</p>
                         <p>Through my analysis, I found an opportunity to create a guided interior design process, focused on customer and expert satisfaction, that tailored services to people's style and budget preferences.</p>
@@ -247,7 +254,7 @@
 
                 <!--User Research img & blurb-->
                 <div class="row"> <!--open row holding 2 columns-->
-                    <div> <!--open first column holding img/img tag-->
+                    <div class="col-md-6 col-lg-7"> <!--open first column holding img/img tag-->
                         <picture>
                             <source srcset="img/roomy/roomy-case-study/roomy_insights@1x.jpg" media="(max-width:767px)">
                             <img src="img/roomy/roomy-case-study/roomy_insights@2x.jpg" alt="User research insights">
@@ -258,7 +265,7 @@
                         </div>
                     </div> <!--close first column-->
 
-                    <div> <!--open 2nd column holding blurb/ button-->
+                    <div class="col-md-6 col-lg-5"> <!--open 2nd column holding blurb/ button-->
                         <h3>User Research</h3>
                         <p>Now that I understood the problem space, competitors, business constraints, and the app's high-level requirements and goals – there was still a human aspect missing! I needed to correctly identify and validate my target user. I interviewed people who had recently designed a space and had varying experience with online design tools. Interviews were a mix of in-person and remote recorded sessions in order to observe non-verbal cues. The insights I gained from these sessions were used to guide the design process and ensure a user-centered approach.</p>
                     
@@ -342,13 +349,13 @@
                <!--User flows blurb & img-->
                <div class="row"> <!--start row holding 2 columns-->
 
-                <div> <!--open 1st column holding blurb-->
+                <div class="col-md-6 col-lg-7"> <!--open 1st column holding blurb-->
                     <h3>User Flows</h3>
                     <p>Next, I created user flows to help me understand the path users would take to achieve key goals. I wanted to visualize what decisions users would make along the way in to understand the functionality required to achieve key goals. In this stage, I was intentional about finding an intuitive "happy" path.</p>
 
                 </div> <!--end first column-->
 
-                <div> <!--open 2nd column holding img-->
+                <div class="col-md-6 col-lg-5"> <!--open 2nd column holding img-->
                     <picture>
                         <source srcset="img/roomy/roomy-case-study/roomy_flow@1x.jpg" media="(max-width:767px)">
                         <img class="right" src="img/roomy/roomy-case-study/roomy_flow@2x.jpg" alt="User Flow">
@@ -378,7 +385,7 @@
 
                <!--Prototype & Test heading-->
                <div>
-                <h2 id="Prototype&amp;Test">Prototype &amp; Test </h2>
+                <h2 id="PT">Prototype &amp; Test </h2>
                </div>
 
 
@@ -457,7 +464,7 @@
                <!--User Testing-->
                <div class="row"> <!--start row holding 2 columns-->
 
-                <div> <!--open 1st column holding blurb-->
+                <div class="col-md-6 col-lg-7"> <!--open 1st column holding blurb-->
                     <h3>User Testing</h3>
                     <p>Now that I created an interactive prototype for people to test out, I needed to create a strategic test plan to map out the goals and objectives beforehand. I identified the core tasks I wanted participants to test and began recruitment.</p>
                     <p>I conducted a mix of remote and in-person moderated usability sessions with 5 participants. Tasks included adding an item to cart, creating a new inspiration folder, hiring an expert, and completing onboarding.</p>
@@ -466,7 +473,7 @@
 
                 </div> <!--end first column-->
 
-                <div> <!--open 2nd column holding img-->
+                <div class="col-md-6 col-lg-5"> <!--open 2nd column holding img-->
                     <picture>
                         <source srcset="img/roomy/roomy-case-study/roomy_affinity@1x.jpg" media="(max-width:767px)">
                         <img src="img/roomy/roomy-case-study/roomy_affinity@2x.jpg" alt="Affinity mapping">
@@ -483,23 +490,23 @@
                <!--Usability Issue row w/ 4 percentages-->
                <div class="row"> <!--open row holding 4 columns-->
 
-                <div> <!--open 1st column-->
+                <div class="col-md-3"> <!--open 1st column-->
                     <h2>100%</h2>
                     <p>of participants had issues accurately identifying bottom navigation bar icons.</p>
 
                 </div> <!--close 1st column-->
 
-                <div> <!--open 2nd column -->
+                <div class="col-md-3"> <!--open 2nd column -->
                     <h2>50%</h2>
                     <p>of participants had issues recognizing the bookmark icon.</p>
                 </div> <!--close 2nd column-->
                 
-                <div> <!--open 3rd column-->
+                <div class="col-md-3"> <!--open 3rd column-->
                     <h2>100%</h2>
                     <p>of participants were confused by the "Explore" tab being the default setting on the Explore page.</p>
                 </div> <!--close 3rd column-->
 
-                <div> <!--open 4th column-->
+                <div class="col-md-3"> <!--open 4th column-->
                     <h2>80%</h2>
                     <p>of participants were confused on the "Create New" button's intended function.</p>
                 </div> <!--close 4th column-->
@@ -511,7 +518,7 @@
                <!--Usability Fixes, slidehshow with four imgs w/ accompanying blurbs-->
                <div class="row"> <!--open row holding 4 columns-->
 
-                <div> <!--open 1st column holding img/blurb-->
+                <div class="col-md-3"> <!--open 1st column holding img/blurb-->
                     <picture>
                         <source srcset="img/roomy/roomy-case-study/roomy_1fix@1x.jpg" media="(max-width:767px)">
                         <img src="img/roomy/roomy-case-study/roomy_1fix@2x.jpg" alt="Usability fix 1">
@@ -520,7 +527,7 @@
                     <p>I addressed the “CREATE NEW” confusion by changing it to “New Project.” I also enumerated the functions of the icons in the navigation bar and got rid of the “+” icon as it was redundant.</p>
                 </div> <!--close 1st column-->
 
-                <div> <!--open 2nd column-->
+                <div class="col-md-3"> <!--open 2nd column-->
                     <picture>
                         <source srcset="img/roomy/roomy-case-study/roomy_2fix@1x.jpg" media="(max-width:767px)">
                         <img src="img/roomy/roomy-case-study/roomy_2fix@2x.jpg" alt="Usability fix 2">
@@ -529,7 +536,7 @@
                     <p>Here I changed the bookmark icon to a star in hopes that this icon is more recognizable for users.</p>
                 </div> <!--close 2nd column-->
 
-                <div> <!--open 3rd column-->
+                <div class="col-md-3"> <!--open 3rd column-->
                     <picture>
                         <source srcset="img/roomy/roomy-case-study/roomy_3fix@1x.jpg" media="(max-width:767px)">
                         <img src="img/roomy/roomy-case-study/roomy_3fix@2x.jpg" alt="Usability fix 3">
@@ -538,7 +545,7 @@
                     <p>I highlighted the Explore tab to stress to users that this tab is the default setting</p>
                 </div> <!--close 3rd column-->
 
-                <div> <!--open 4th column-->
+                <div class="col-md-3"> <!--open 4th column-->
                     <picture>
                         <source srcset="img/roomy/roomy-case-study/roomy_4fix@1x.jpg" media="(max-width:767px)">
                         <img src="img/roomy/roomy-case-study/roomy_4fix@2x.jpg" alt="Usability fix 4">
@@ -553,7 +560,7 @@
 
                 <!--Final Iteration heading-->
                 <div>
-                    <h2 id="FinalIteration">Final Iteration</h2>
+                    <h2 id="FI">Final Iteration</h2>
                 </div>
 
 
@@ -590,7 +597,7 @@
                 <!--Final iteration 6 img slideshow-->
                 <div class="row"> <!--open row holding 6 columns-->
 
-                    <div> <!--open 1st column holding img-->
+                    <div class="col-md-2"> <!--open 1st column holding img-->
                         <picture>
                             <source srcset="img/roomy/roomy-case-study/roomy_1final@1x.jpg" media="(max-width:767px)">
                             <img src="img/roomy/roomy-case-study/roomy_1final@2x.jpg" alt="graphic 1">
@@ -598,7 +605,7 @@
 
                     </div> <!--close column 1-->
 
-                    <div> <!--open 2nd column holding img-->
+                    <div class="col-md-2"> <!--open 2nd column holding img-->
                         <picture>
                             <source srcset="img/roomy/roomy-case-study/roomy_2final@1x.jpg" media="(max-width:767px)">
                             <img src="img/roomy/roomy-case-study/roomy_2final@2x.jpg" alt="graphic 2">
@@ -606,7 +613,7 @@
 
                     </div> <!--close column 2-->
 
-                    <div> <!--open 3rd column holding img-->
+                    <div class="col-md-2"> <!--open 3rd column holding img-->
                         <picture>
                             <source srcset="img/roomy/roomy-case-study/roomy_3final@1x.jpg" media="(max-width:767px)">
                             <img src="img/roomy/roomy-case-study/roomy_3final@2x.jpg" alt="graphic 3">
@@ -614,7 +621,7 @@
 
                     </div> <!--close column 3-->
 
-                    <div> <!--open 4th column holding img-->
+                    <div class="col-md-2"> <!--open 4th column holding img-->
                         <picture>
                             <source srcset="img/roomy/roomy-case-study/roomy_4final@1x.jpg" media="(max-width:767px)">
                             <img src="img/roomy/roomy-case-study/roomy_4final@2x.jpg" alt="graphic 4">
@@ -622,7 +629,7 @@
 
                     </div> <!--close column 4-->
 
-                    <div> <!--open 5th column holding img-->
+                    <div class="col-md-2"> <!--open 5th column holding img-->
                         <picture>
                             <source srcset="img/roomy/roomy-case-study/roomy_5final@1x.jpg" media="(max-width:767px)">
                             <img src="img/roomy/roomy-case-study/roomy_5final@2x.jpg" alt="graphic 5">
@@ -630,7 +637,7 @@
 
                     </div> <!--close column 5-->
 
-                    <div > <!--open 6th column holding img-->
+                    <div class="col-md-2"> <!--open 6th column holding img-->
                         <picture>
                             <source srcset="img/roomy/roomy-case-study/roomy_6final@1x.jpg" media="(max-width:767px)">
                             <img src="img/roomy/roomy-case-study/roomy_6final@2x.jpg" alt="graphic 6">
@@ -652,7 +659,7 @@
                 <!--row holding imgs/CTA's/figma links to  4 user flow columns-->
                 <div class="row"> <!--open row holding 4 columns-->
 
-                    <div> <!--open 1st column-->
+                    <div class="col-md-3"> <!--open 1st column-->
                         <picture>
                             <source srcset="img/roomy/roomy-case-study/roomy_cart_flow@1x.jpg" media="(max-width:767px)">
                             <img src="img/roomy/roomy-case-study/roomy_cart_flow@2x.jpg" alt="Add to cart flow graphic">
@@ -662,7 +669,7 @@
                         <p>Shop among millions of products to find the perfect pieces to create the spaces you love!</p>
                     </div> <!--close 1st column-->
 
-                    <div> <!--open 2nd column-->
+                    <div class="col-md-3"> <!--open 2nd column-->
                         <picture>
                             <source srcset="img/roomy/roomy-case-study/roomy_expert_flow@1x.jpg" media="(max-width:767px)">
                             <img src="img/roomy/roomy-case-study/roomy_expert_flow@2x.jpg" alt="Hire an expert flow graphic">
@@ -672,7 +679,7 @@
                         <p>Start a project and take our personalized Style Quiz to find your perfect expert match all within your budget!</p>
                     </div> <!--close 2nd column-->
 
-                    <div> <!--open 3rd column-->
+                    <div class="col-md-3"> <!--open 3rd column-->
                         <picture>
                             <source srcset="img/roomy/roomy-case-study/roomy_explore_flow@1x.jpg" media="(max-width:767px)">
                             <img src="img/roomy/roomy-case-study/roomy_explore_flow@2x.jpg" alt="Explore inspiration graphic">
@@ -682,7 +689,7 @@
                         <p>Explore our comprehensive design inspiration and save them to folders to keep all your ideas in one place</p>
                     </div> <!--close 3rd column-->
 
-                    <div> <!--open 4th column-->
+                    <div class="col-md-3"> <!--open 4th column-->
                         <picture>
                             <source srcset="img/roomy/roomy-case-study/roomy_account_flow@1x.jpg" media="(max-width:767px)">
                             <img src="img/roomy/roomy-case-study/roomy_account_flow@2x.jpg" alt="Add adress/payment graphic">
@@ -697,13 +704,14 @@
 
 
                 <!--final clickable prototype & heading-->
+                
                 <div class="row"> <!--open row holding 2 columns-->
-                    <div> <!--open 1st column holding clickable prototype-->
-                        <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBecyhGe41URcDwQDAnov7J%2FHi-Fi-Roomy-App%3Fnode-id%3D1-2196%26scaling%3Dscale-down%26page-id%3D1%253A439%26starting-point-node-id%3D1%253A2196" height="450" width="800" allowfullscreen="allowfullscreen"></iframe>
+                    <div class="col-md-6 col-lg-7 frame-container"> <!--open 1st column holding clickable prototype-->
+                        <iframe class="responsive-iframe" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBecyhGe41URcDwQDAnov7J%2FHi-Fi-Roomy-App%3Fnode-id%3D1-2196%26scaling%3Dscale-down%26page-id%3D1%253A439%26starting-point-node-id%3D1%253A2196" height="450" width="800" allowfullscreen="allowfullscreen"></iframe>
 
                     </div> <!--close 1st column-->
 
-                    <div> <!--open 2nd column holding heading-->
+                    <div class="col-md-6 col-lg-5"> <!--open 2nd column holding heading-->
                         <h3>Final clickable prototype</h3>
                     </div> <!--close 2nd column-->
 
@@ -728,18 +736,18 @@
 
                 <!--Takeaways row holding 3 columns-->
                 <div class="row"> <!--open row holding 3 columns-->
-                    <div>
+                    <div class="col-md-4">
                         <h3>01</h3>
                         <p>Design collaboration is great and even necessary, BUT you need balance. As I reviewed my feedback, I found there were some suggestions I loved, and some that didn’t fit. Being able to sift through that advice and compare it to your user research is a critical skill.</p>
 
                     </div>
 
-                    <div>
+                    <div class="col-md-4">
                         <h3>02</h3>
                         <p>There are always going to be hitches along the way. During my usability sessions, I ran into technology and inexperience-based issues. The importance lies in remaining calm and thinking on your feet to ensure participants feel comfortable and you find a timely, working solution.</p>
                     </div>
 
-                    <div>
+                    <div class="col-md-4">
                         <h3>03</h3>
                         <p>While I learned of several methods of testing user usability and preference, I also learned that sometimes testing reveals no difference. My preference testing revealed no statistically significant difference. I learned this finding is just as important as a clear difference.</p>
                     </div>

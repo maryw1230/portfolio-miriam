@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/cc06e86d99.js" crossorigin="anonymous"></script>
     <title>About</title>
 </head>
 <body id="aboutpage">
@@ -20,14 +21,15 @@
         <!-- for the navigation -->
         <div class="container highlightTextOut" id="navigation"> 
         <!--for hyperlink name logo-->  
-       <a class="logo" href="#"> My Name Logo</a>
+       <!--<a class="logo" href="#"> My Name Logo</a> -->
        <a href="index.html">
-        <img class="logo" src="https://via.placeholder.com/150x50?text=my-cool-logo" alt="Your Name" ></a>
+        <img class="logo" src="img/logo/miriam-logo-trans@1x.png" alt="Miriam logo" ></a>
         <nav>
             <ul>
                 <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a onclick="menuToggle()" href="#contact">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i> </a></li>
             </ul>
         </nav>
         </div>

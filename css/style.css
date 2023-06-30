@@ -26,7 +26,6 @@ White: #ffffff
 
 header {
     padding: 10px 0 4px;
-    
     position: fixed;
     width: 100%;
     width: [object Object]px; 
@@ -57,6 +56,10 @@ main {
 #designprocess > nav > ul{
     padding-bottom: 25px; 
     border-bottom: 1px solid #4a4a4a;
+}
+
+#designprocess > nav > ul > li > a {
+    color: #ffffff;
 }
 
 nav > ul {
@@ -92,7 +95,7 @@ nav > ul > li > a:active {
 }
 
 nav > ul > li > a {  
-        color: #FFF;
+        color: #4a4a4a;
         text-decoration: none;
         font: 20px Raleway;
         margin: 0px 10px;
@@ -153,7 +156,7 @@ nav > ul > li > a {
     text-align: right;
     padding: 13px 0;
     border-top: 1px solid #4a4a4a;
-    
+
 }
 
 .navtoggle.responsive li:last-child  {
@@ -209,7 +212,13 @@ h3 {
     font-weight: 400;
 }
 
-img {width: 100%}
+img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 
 a {
     color: #1c1d20;
@@ -269,6 +278,8 @@ footer a:active {
     transition: 0.4s;
     font-size: 18px;
 }
+
+
 
 .button.contact {
     margin: 10px;
@@ -338,7 +349,25 @@ footer a:active {
 
 }*/
 
+/*Style the social icons*/
 .social {
+    list-style-type: none;
+    padding: 0;
+    margin-left: -10px;
+}
+  
+.social li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+  
+.social img {
+    height: 32px;
+    width: 32px;
+}
+
+/*.social {
     margin: auto;
     width: 10%;
     text-align: center;
@@ -367,6 +396,11 @@ footer a:active {
     border-bottom: 1px solid #0e1b21;
 }
 
+#roomypage .row {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
 #hero h1 {
     text-align: center;
 }
@@ -377,7 +411,7 @@ footer h2 {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 80px;
     text-align: center;
     float: left;
 }
@@ -398,6 +432,14 @@ footer h2 {
     width: 100%;
     height: 100%;
 }
+
+/*.gray {
+    width: 100%;
+    background-color: #d3d3d3;
+    padding-top: 3px;
+    
+    
+}/*
 
 /*.big.img {
     max-width: 100%;
@@ -507,11 +549,15 @@ main {
 }
 
 .logo {
-    max-width: 200px;
+    max-width: 150px;
 }
 
 .col-md-6 {
     width: 50%;
+}
+
+.col-md-5 {
+    width: 19.99%;
 }
 
 .col-md-4 {

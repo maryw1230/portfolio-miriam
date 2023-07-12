@@ -20,6 +20,24 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <style> 
+      h1, h4 {
+        text-align: center;
+      }
+
+      h1 {
+        margin-top: 50px;
+        margin-bottom: 0;
+      }
+
+    @media only screen and (min-width: 640px) {
+    .col-md-4 img {
+        border-radius: 0%;
+      }
+    }
+    
+    </style>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -30,6 +48,7 @@
       src="https://kit.fontawesome.com/cc06e86d99.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>UWord Vocabulary Learning App</title>
   </head>
   <body id="roomypage">
@@ -43,14 +62,14 @@
           <a href="index.html">
             <img
               class="logo"
-              src="img/logo/miriam-logo-trans@1x.png"
+              src="img/logo/md_logo.png"
               alt="Miriam logo"
           /></a>
           <nav>
             <ul>
-              <li><a href="index.html">Work</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a onclick="menuToggle()" href="#contact">Contact</a></li>
+              <li><a href="index.html" class="nav-button">Work</a></li>
+              <li><a href="about.html" class="nav-button">About</a></li>
+              <li><a onclick="menuToggle()" href="#contact" class="nav-button">Contact</a></li>
               <li>
                 <a
                   href="javascript:void(0);"
@@ -66,49 +85,52 @@
     </header>
 
     <main>
-      <div class="container" id="roomy">
+      <div class="container" id="top">
         <div>
-          <!-- for the Roomy heading -->
-          <!-- <h1>Roomy </h1> -->
+          
+          <h1>UWord </h1>
         </div>
 
-        <!--for the main project photo/ overview-->
-        <div>
-          <div class="row">
-            <!--UWord blurb-->
-            <div class="col-md-6 col-lg-7">
-              <h1>UWord</h1>
-              <h3>
-                Empowering people with the tools to learn new vocabulary on the
-                go!
-              </h3>
-            </div>
+        <div class="prokect-link" ></div>
+          <div>
+            <h4>
+              <a class="link" href="#About">About</a>
+              <a class="link" href="#UO">Understand &amp; Observe</a>
+              <a class="link" href="#POV">POV &amp; Ideate</a>
+              <a class="link" href="#PT">Prototype &amp; Test</a>
+              <a class="link" href="#FT">Final Thoughts</a>
+            </h4>
+        </div>
 
-            <div class="col-md-6 col-lg-5">
-              <picture>
-                <source
-                  srcset="img/uword/uword-case-study/uword_heading@1x.jpg"
-                  media="(max-width:767px)"
-                />
-                <img
+
+
+
+
+        <!--for the main project photo/ overview-->
+        <div class="container">
+          <div class="row" id="prototype">
+            <!--UWord blurb-->
+            <div class="col-md-6 col-lg-5 col-xl-4">
+            <div>
+              <img
                   src="img/uword/uword-case-study/uword_heading@2x.jpg"
                   alt="Uword Interior Design Mockup"
                 />
-              </picture>
             </div>
-          </div>
 
-          <!--start project overview-->
-          <div class="row">
-            <!--open row holding 2 columns-->
-            <div class="col-md-6 col-lg-7">
-              <!--open 1st column holding title-->
+              
+            </div>
+
+            <div class="col-md-6 col-lg-7 col-xl-4">
+              <div id="about"></div>
+              <div>
+              <h2>Who we are</h2>
+              <p>
+                Empowering people with the tools to learn new vocabulary on the
+                go!
+              </p> 
+
               <h2>Project origin</h2>
-            </div>
-            <!--end first column-->
-
-            <div class="col-md-6 col-lg-5">
-              <!--open 2nd column holding paragraph-->
               <p>
                 Roomy began as a high-level course project. I was asked to
                 create a product that enabled anyone, anywhere to chat with an
@@ -123,10 +145,12 @@
                 services and experience it gave users, and to do so I put my
                 user-focused foot forward!
               </p>
+              </div>
             </div>
-            <!--end 2nd column-->
+            
           </div>
-          <!--end row holding 2 columns-->
+
+          
 
           <!--start role/timeline overview-->
           <div class="row">
@@ -143,7 +167,7 @@
 
             <div class="col-md-4">
               <!--open 2nd column holding context/year-->
-              <h2>Context / year</h2>
+              <h2>Context</h2>
               <p>Career Foundry UX Design Course</p>
               <p>2023</p>
             </div>
@@ -167,49 +191,14 @@
             <h2 id="dp">My Design Process</h2>
           </div>
 
-          <!--for design process navigation-->
-          <div id="designprocess" class="container row">
-            <nav>
-              <ul>
-                <li>
-                  <a class="button" href="#UO">Understand &amp; Observe</a>
-                </li>
-                <li><a class="button" href="#POV">POV &amp; Ideate</a></li>
-                <li><a class="button" href="#PT">Prototype &amp; Test</a></li>
-                <li><a class="button" href="#FT">Final Thoughts</a></li>
-              </ul>
-            </nav>
-          </div>
+         
 
-          <!--<div>
-                    <nav>
-                        <ul>
-                            <li> <a class="step link" href="#Understand&amp;Observe">
-                                <div class="step-number">1</div>
-                                <div class="step-name">Understand &amp; Observe</div>
-                            </a></li>
 
-                            <li> <a class="step link" href="#POV">
-                                <div class="step number">2</div>
-                                <div class="step name">POV &amp; Ideate</div>
-                            </a></li>
-
-                            <li> <a class="step link" href="#Prototype">
-                                <div class="step number">3</div>
-                                <div class="step name">Prototype</div>
-                            </a></li>
-
-                            <li> <a class="step link" href="#FinalIteration">
-                                <div class="step-number">4</div>
-                                <div class="step-name">Final Iteration</div>
-                            </a></li>
-                        </ul>
-                    </nav>
-                </div> -->
+    
 
           <!--for design process img & blurb-->
           <div class="container">
-            <div>
+            <div class="row">
               <!--for picture-->
               <picture>
                 <source
@@ -226,22 +215,22 @@
 
               <div>
                 <!--for blurb-->
-                <p>Overview of the user-centered design process</p>
+                <p >Overview of the user-centered design process</p>
               </div>
             </div>
           </div>
 
           <!--Understand & Observe Heading-->
 
+          <div class="project-link" id="UO"></div>
           <div>
-            <h2 id="UO">Understand &amp; Observe</h2>
-          </div>
+            <h2 >
+              Understand &amp; Observe <a href="#top" class="arrow">&#8593</a>
+            </h2>
+          
 
           <!--The challenge blurb & img-->
-          <div class="row">
-            <!--open row holding 2 columns-->
-            <div class="col-md-6 col-lg-7">
-              <!--open 1st column holding The challenge-->
+          
               <h3>The Challenge</h3>
               <p>
                 Many of us have hectic lives! While people may want to learn a
@@ -252,121 +241,48 @@
                 knowledge to minimize studying while maximizing retention on the
                 go.
               </p>
-              <p></p>
-            </div>
+              
+           
             <!--end first column-->
-
-            <div class="col-md-6 col-lg-5">
-              <!--open 2nd column holding img-->
-              <picture>
-                <source
-                  srcset="img/uword/uword-case-study/uword_challenge@1x.jpg"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/uword/uword-case-study/uword_challenge@2x.jpeg"
-                  alt="Man facing a challenge"
-                />
-              </picture>
-            </div>
-            <!--end 2nd column-->
-          </div>
-          <!--end row holding 2 columns-->
-
-          <!--The process and goal imgs-->
+              <!--The road and destination imgs-->
           <div class="row">
             <!--open row holding 2 columns-->
-            <div class="col-md-6 col-lg-7">
-              <!--open 1st column holding road ahead img-->
-              <picture>
-                <source
-                  srcset="img/uword/uword-case-study/uword_process@1x.jpg"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/uword/uword-case-study/uword_process@2x.jpeg"
-                  alt="The road ahead image"
-                />
-              </picture>
-            </div>
-            <!--close 1st column-->
+            <div class="col-md-6 col-lg-8 col-xl-4">
+              <h3>The Process:</h3>
+              <!--<p>With this project, I knew I would be wearing many hats, so I
+                needed a road map to keep me moving forward.</p>-->
 
-            <div class="col-md-6 col-lg-5">
-              <!--open 2nd column holding destination img-->
-              <picture>
-                <source
-                  srcset="img/uword/uword-case-study/uword_goal@1x.jpg"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/uword/uword-case-study/uword_goal@2x.jpeg"
-                  alt="The destination image"
-                />
-              </picture>
-            </div>
-            <!--close second column-->
-          </div>
-          <!--end row holding 2 columns-->
-
-          <!--The process and goal blurbs-->
-          <div class="row">
-            <!--open row holding 2 columns-->
-            <div class="col-md-6 col-lg-7">
-              <!--open 1st column holding road ahead blurb-->
               <p>
-                My process began with thorough competitive analysis. I compared
-                the successes and pain points of three major vocabulary apps in
+                My process began with a competitive analyses. I compared
+                the successes and pain points of three major vocab apps in
                 the market. The resulting information was used to survey
                 potential users.
               </p>
               <p>
-                From their responses and nonverbal cues, a user persona was
-                created to embody the wants and needs of my target audience. The
-                information architecture of the app was then created taking into
+                I created a user persona then began building the
+                information architecture of the app taking into
                 account the user persona's wants and needs. From here, initial
-                wireframes were created which were then iterated upon after a
-                usability test.
+                wireframes were created and iterated upon after
+                usability testing.
               </p>
+
             </div>
             <!--close 1st column-->
 
-            <div class="col-md-6 col-lg-5">
-              <!--open 2nd column holding destination blurb-->
-              <p>
-                To design a vocabulary app that is so fun and useful that people
-                with hectic lives can and want to integrate it into their lives.
-              </p>
+            <div class="col-md-6 col-lg-8 col-xl-4">
+              <!--open 2nd column holding destination img-->
+              <h3>The Goal:</h3>
+              <p> With Roomy, I want to empower people with instant expert advice
+                and quality tools, so they can create spaces they love while
+                enjoying the process and not breaking the bank.</p>
+
             </div>
             <!--close second column-->
           </div>
           <!--end row holding 2 columns-->
 
-          <!--Understanding the market img & blurb-->
-          <div class="row">
-            <!--open row holding 2 columns-->
-            <div class="col-md-6 col-lg-7">
-              <!--open first column holding img/img tag-->
-              <picture>
-                <source
-                  srcset="img/uword/uword-case-study/uword_competitors@1x.jpg"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/uword/uword-case-study/uword_competitors@2x.jpg"
-                  alt="Houzz and Havenly logos"
-                />
-              </picture>
 
-              <div>
-                <!--img tag, will be placed underneath img-->
-                <p>competitors</p>
-              </div>
-            </div>
-            <!--close first column-->
-
-            <div class="col-md-6 col-lg-5">
-              <!--open 2nd column holding blurb/ button-->
-              <h3>Understanding the Market</h3>
+          <h3>Understanding the Market</h3>
               <p>
                 I conducted a competitive analysis to understand what is
                 currently on the market and identify opportunities for my own
@@ -388,37 +304,13 @@
               >
                 Full Competitor Analysis &amp; BRD</a
               >
-            </div>
-            <!--close 2nd column-->
-          </div>
-          <!--close row holding 2 columns-->
 
-          <!--User Research img & blurb-->
-          <div class="row">
-            <!--open row holding 2 columns-->
-            <div class="col-md-6 col-lg-7">
-              <!--open first column holding img/img tag-->
-              <picture>
-                <source
-                  srcset="img/uword/uword-case-study/uword_insights@1x.jpg"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/uword/uword-case-study/uword_insights@2x.jpg"
-                  alt="User research insights"
-                />
-              </picture>
+      
+         
 
-              <div>
-                <!--img tag, will be placed underneath img-->
-                <p>insights</p>
-              </div>
-            </div>
-            <!--close first column-->
 
-            <div class="col-md-6 col-lg-5">
-              <!--open 2nd column holding blurb/ button-->
-              <h3>User Research</h3>
+          <!--user research-->
+          <h3>User Research</h3>
               <p>
                 I conducted user interviews to gain direct insight into the
                 wants and needs of potential users. I interviewed three
@@ -437,21 +329,47 @@
               >
                 Full User Interviews
               </a>
-            </div>
-            <!--close 2nd column-->
+              <p></p>
+
+              <picture>
+                <source
+                  srcset="img/uword/uword-case-study/uword_insights@1x.jpg"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="img/uword/uword-case-study/uword_insights@2x.jpg"
+                  alt="User research insights"
+                />
+              </picture>
+              <p>insights</p>
           </div>
-          <!--close row holding 2 columns-->
+
+
+
+
+
+        
+
+         
 
           <!--POV & Ideate heading-->
+          <div class="project-link" id="POV"></div>
           <div>
-            <h2 id="POV">POV &amp; Ideate</h2>
-          </div>
+            <h2>
+              POV &amp; Ideate <a href="#top" class="arrow">&#8593</a>
+            </h2>
 
-          <!--Creating personas blurb and img-->
-          <div class="row">
-            <!--open row holding 2 columns-->
-            <div class="col-md-6 col-lg-7">
-              <!--open first column holding img/img tag-->
+            
+            <!--Creating personas blurb and img-->
+            <h3>Creating my Proto-Personas</h3>
+              <p>
+                Using the data I gathered from my competitor analyses and user
+                interviews, I created a proto-persona I would refer to
+                throughout the design process. Embodying the wants, needs,
+                motivations, and pain points of users was integral as it allowed
+                me to empathize with them more.
+              </p>
+
               <picture>
                 <source
                   srcset="img/uword/uword-case-study/uword_protopersona@1x.jpg"
@@ -462,35 +380,28 @@
                   alt="proto-persona, Sara"
                 />
               </picture>
+              <p>proto-persona, Sara</p>
 
-              <div>
-                <!--img tag, will be placed underneath img-->
-                <p>proto-persona, Sara</p>
-              </div>
-            </div>
-            <!--close first column-->
+         
 
-            <div class="col-md-6 col-lg-5">
-              <!--open 2nd column holding blurb/ button-->
-              <h3>Creating my Proto-Personas</h3>
-              <p>
-                Using the data I gathered from my competitor analyses and user
-                interviews, I created a proto-persona I would refer to
-                throughout the design process. Embodying the wants, needs,
-                motivations, and pain points of users was integral as it allowed
-                me to empathize with them more.
-              </p>
-            </div>
-            <!--close 2nd column-->
-          </div>
-          <!--close row holding 2 columns-->
+
+
+
+
+
+
+
+  
+          
+
+
 
           <!--Problem & Hypothesis blurbs-->
           <div class="row">
             <!--open row holding 2 columns-->
-            <div class="col-md-6">
-              <!--open 2nd column holding problem blurb-->
-              <h3>Problem</h3>
+            <div class="col-md-6 col-lg-8 col-xl-4">
+              <!--open 1st column holding problem blurb-->
+              <h3>Problem:</h3>
               <p>
                 Sara needs a fun and accessible way to effectively organize and
                 manage all the new information and vocabulary she is learning
@@ -499,11 +410,11 @@
                 Sara succeeds in her classes and gets her MBA.
               </p>
             </div>
-            <!--close 2nd column-->
+            <!--close 1st column-->
 
-            <div class="col-md-6">
+            <div class="col-md-6 col-lg-8 col-xl-4">
               <!--open 2nd column holding hypothesis blurb-->
-              <h3>Hypothesis</h3>
+              <h3>Hypothesis:</h3>
               <p>
                 We believe that by creating an accessible mobile vocabulary app
                 that caters to different types of learners users, allows users
@@ -516,8 +427,10 @@
           </div>
           <!--close row holding 2 columns-->
 
+
+
           <!--User Flows blurb-->
-          <div>
+         
             <h3>User Flows</h3>
             <p>
               I created user flows for two major goals my persona would have to
@@ -525,44 +438,34 @@
               out the steps users would take in order to find an intuitive,
               happy path.
             </p>
-          </div>
+          
 
-          <!--user flow img (*2) eventual slideshow???-->
-          <div>
-            <!--user flow 1, creating new set-->
-            <picture>
-              <source
-                srcset="img/uword/uword-case-study/uword_flow1@1x.jpg"
-                media="(max-width:767px)"
-              />
-              <img
-                src="img/uword/uword-case-study/uword_flow1@2x.jpg"
-                alt="Persona 1: Draya"
-              />
-            </picture>
-            <p>User flow 1: creating a new vocabulary set</p>
-
-            <!--User flow 2, mastering a new set-->
-            <picture>
-              <source
-                srcset="img/uword/uword-case-study/uword_flow2@1x.jpg"
-                media="(max-width:767px)"
-              />
-              <img
-                src="img/uword/uword-case-study/uword_flow2@2x.jpg"
-                alt="Persona 2: Sara"
-              />
-            </picture>
-            <p>User flow 2: mastering a new vocabulary set</p>
+       
+            
+              <picture>
+                <source
+                  srcset="img/uword/uword-case-study/uword_flow2@1x.jpg"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="img/uword/uword-case-study/uword_flow2@2x.jpg"
+                  alt="Persona 2: Sara"
+                />
+              </picture>
+              <p>User flow: mastering a new vocabulary set</p>
+          
           </div>
 
           <!--Prototype & Test heading-->
+          <div class="project-link" id="PT"></div>
           <div>
-            <h2 id="PT">Prototype &amp; Test</h2>
-          </div>
+            <h2>
+              Prototype &amp; Test <a href="#top" class="arrow">&#8593</a>
+            </h2>
+          
 
           <!--Wireframing & Prototyping blurb-->
-          <div>
+        
             <h3>Wireframing &amp; Prototyping</h3>
             <p>
               Once I had a solid idea of the main content and features of the
@@ -579,7 +482,7 @@
               I collated the wireframes into a clickable prototype using the
               online Marvel tool.
             </p>
-          </div>
+          
 
           <!--Wireframes 6 img slideshow-->
           <div class="row">
@@ -678,10 +581,7 @@
           <!--close row holdng 6 columns-->
 
           <!--Usability Testing-->
-          <div class="row">
-            <!--start row holding 2 columns-->
-
-            <div class="col-md-6 col-lg-7">
+          
               <!--open 1st column holding blurb-->
               <h3>Usability Testing</h3>
               <p>
@@ -699,27 +599,10 @@
                 target="_blank"
                 >Full Test Plan &amp; Results</a
               >
-            </div>
-            <!--end first column-->
+            
+       
 
-            <div class="col-md-6 col-lg-5">
-              <!--open 2nd column holding img-->
-              <picture>
-                <source
-                  srcset="img/uword/uword-case-study/uword_testing@1x.jpg"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/uword/uword-case-study/uword_testing@2x.jpeg"
-                  alt="Usability testing"
-                />
-              </picture>
-
-              <p>Usability testing</p>
-            </div>
-            <!--end 2nd column-->
-          </div>
-          <!--end row holdikng 2 columns-->
+         
 
           <!--4 pain points-->
           <div class="row">
@@ -727,7 +610,7 @@
 
             <div class="col-md-3">
               <!--open 1st column-->
-              <h2>Pain point 1</h2>
+              <h3>Pain point 1</h3>
               <p>
                 participants wanted pop-ups to provide further instruction on
                 save function
@@ -737,7 +620,7 @@
 
             <div class="col-md-3">
               <!--open 2nd column -->
-              <h2>Pain point 2</h2>
+              <h3>Pain point 2</h3>
               <p>
                 participants wanted a pin function to save favorite words/sets
               </p>
@@ -746,7 +629,7 @@
 
             <div class="col-md-3">
               <!--open 3rd column-->
-              <h2>Pain point 3</h2>
+              <h3>Pain point 3</h3>
               <p>
                 participants wanted a way to create sets/folders directly from
                 “My Sets”/”My Folders”
@@ -756,7 +639,7 @@
 
             <div class="col-md-3">
               <!--open 4th column-->
-              <h2>Pain point 4</h2>
+              <h3>Pain point 4</h3>
               <p>
                 participants found the toolbar too small and difficult to see
               </p>
@@ -764,6 +647,9 @@
             <!--close 4th column-->
           </div>
           <!--close row holding 4 columns-->
+
+
+          
 
           <!--Usability Fixes, slidehshow with 3 imgs w/ accompanying blurbs-->
           <div class="row">
@@ -832,35 +718,26 @@
           <!--close row holding 4 columns-->
 
           <!--final clickable prototype & heading-->
+          
+            <h3 style="text-align: center;">Click here for the final clickable prototype!</h3>
+            <div style="text-align: center;">
+            <a href="https://marvelapp.com/prototype/ihf3bh7" target="_blank">
 
-          <div class="row">
-            <!--open row holding 2 columns-->
-            <div class="col-md-6 col-lg-7 frame-container">
-              <!--open 1st column holding clickable prototype-->
-              <iframe
-                class="responsive-iframe"
-                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBecyhGe41URcDwQDAnov7J%2FHi-Fi-Roomy-App%3Fnode-id%3D1-2196%26scaling%3Dscale-down%26page-id%3D1%253A439%26starting-point-node-id%3D1%253A2196"
-                height="450"
-                width="800"
-                allowfullscreen="allowfullscreen"
-              ></iframe>
-            </div>
-            <!--close 1st column-->
+            <button class="button-49" role="button">CLICK</button></a>
 
-            <div class="col-md-6 col-lg-5">
-              <!--open 2nd column holding heading-->
-              <h3>Final clickable prototype</h3>
-            </div>
-            <!--close 2nd column-->
+          </div>
           </div>
 
           <!--Final Thoughts heading-->
+          <div class="project-link" id="FT"></div>
           <div>
-            <h2 id="FT">Final Thoughts</h2>
-          </div>
+            <h2>
+              Final Thoughts <a href="#top" class="arrow">&#8593</a>
+            </h2>
+          
 
           <!--Conclusion heading-->
-          <div>
+          
             <h3>Conclusion</h3>
             <p>
               Designing an app from scratch can be very challenging, especially
@@ -885,12 +762,12 @@
               these problems and create a product that addresses the wants and
               needs of my users.
             </p>
-          </div>
+          
 
           <!--Takeaways mini heading-->
-          <div>
+          
             <h3>Main Takeaways</h3>
-          </div>
+          
 
           <!--Takeaways row holding 3 columns-->
           <div class="row">
@@ -928,12 +805,12 @@
             </div>
           </div>
           <!--close row holding 3 columns-->
+          </div>
 
           <!--Thank you blurb-->
-          <div>
-            <h2>Thank you for reading my case study!</h2>
+          <h2>Thank you for reading my case study! <a href="#top" class="arrow">&#8593</a> </h2>
             <p>Miriam Desta</p>
-          </div>
+          
         </div>
       </div>
     </main>
@@ -941,43 +818,34 @@
     <!-- for the footer-->
     <footer id="contact">
       <div class="container">
+        <div>
         <h2>Get in Touch</h2>
         <p>
           Do you like my work and want to discuss opportunities? Let's connect!
-          Call: <a href="tel:248-759-3116">248-759-3116</a> or skype me at
-          <a href="https://join.skype.com/invite/d84NjLsMgCD2">hello.miriam</a>
-          Prefer sending an email?
-        </p>
-        <div>
-          <a href="malito:mwd3kf@virginia.edu" class="button contact"
-            >email me</a
-          >
+          Call: <a href="tel:248-759-3116 ">248-759-3116</a> </p><!--or skype me at
+          <a href="https://join.skype.com/invite/d84NjLsMgCD2">hello.miriam</a> -->
+        <br>
         </div>
-        <div>
-          <ul class="social">
-            <!--Social Media Layout and Placeholders-->
-            <!--For students, the images below should be updated with real svgs and links should be updated-->
-            <li>
-              <a
-                href="https://www.linkedin.com/in/miriamdesta/"
-                target="_blank"
-              >
-                <img
-                  src="https://img.icons8.com/?size=512&id=13930&format=png"
-                  alt="LinkedIn"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="TWITTER-URL" target="_blank">
-                <img src="http://via.placeholder.com/32x32" alt="Twitter" />
-              </a>
-            </li>
-          </ul>
+  
+        <div id="sociallinks">
+          <a href="https://www.linkedin.com/in/miriamdesta/" target="_blank">
+            <img src="img/logo/linkedin.png" alt="LinkedIn">
+  
+          </a>
+  
+          <a href="malito:mwd3kf@virginia.edu" target="_blank">
+            <img src="img/logo/mail.png" alt="email">
+  
+          </a>
         </div>
-        <p>copyright Miriam-Desta 2023</p>
+        
+         
+        <p>COPYRIGHT Miriam Desta 2023</p>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
   </body>
-</html>
+  </html>  

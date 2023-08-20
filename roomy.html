@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
     <style> 
       h1, h4 {
-        text-align: center;
+        text-align: left;
       }
 
       h1 {
@@ -53,12 +53,8 @@
         <div class="navtoggle" id="myNavtoggle">
           <!--for hyperlink name logo-->
           <!--<a class="logo" href="#"> My Name Logo</a> -->
-          <a href="index.html">
-            <img
-              class="logo"
-              src="img/logo/md_logo.png"
-              alt="Miriam logo"
-          /></a>
+          <a style="font-weight: 200;" class="logo" href="index.html"> Miriam Desta
+          </a>
           <nav>
             <ul>
               <li><a href="index.html" class="nav-button">Work</a></li>
@@ -80,12 +76,29 @@
 
     <main>
       <div class="container" id="top">
-        <div >
+        <div>
+
+          <div class="container">
+            <!--Roomy cover photo-->
+          <div>
+            <picture>
+                <source srcset="img/cabin/cabin-cover-photo/cabin_mockup.jpg"
+                media="(max-width: 767px)" />
+                <img src="img/roomy/roomy-cover-photo/roomy_mockup1.jpg" 
+                alt="Cabin Escapes Cover Photo">
+            </picture>
+          </div>
+
+
+
+
           <!-- for the Roomy heading -->
           <h1>Roomy </h1>
+          <div class="container">
+          
         </div>
         <div class="prokect-link" ></div>
-          <div>
+          <div >
             <h4>
               <a class="link" href="#About">About</a>
               <a class="link" href="#UO">Understand &amp; Observe</a>
@@ -94,98 +107,68 @@
               <a class="link" href="#FI">Final Iteration</a>
             </h4>
           </div>
+        </div>
         
         
 
         <!--for the main project photo/ overview-->
         <div class="container">
+
+
           <div class="row" id="prototype">
-            <!--Roomy blurb-->
-            <div class="col-md-6 col-lg-5 col-xl-4">
-          
-                <div>
-                <img
-                  src="img/roomy/roomy-case-study/roomy_heading@2x.jpg" 
-                  alt="Roomy Interior Design Mockup" 
-                />
-            </div>
-             <!-- </picture> -->
+      
 
-            </div>
-
-            <div class="col-md-6 col-lg-7 col-xl-4">
+            <div class="col-md-9 col-lg-9 col-xl-9">
               <div id="about"></div>
               <div>
-              <h2>Who we are</h2>
+              <h3>Who we are</h3>
               <p>
                 Roomy is an intuitive, budget-friendly interior design
-                experience for beginners and experts alike. Roomy gives people
+                app for beginners and experts alike. Roomy gives people
                 comprehensive design inspiration, access to renowned experts,
-                and help verbalizing their vision, so they can create the spaces
+                and help verbalizing their vision, so they can create spaces
                 they love.
               </p>
               <h3>Roomy's origin</h3>
               <p>
                 Roomy began as a high-level course project. I was asked to
                 create a product that enabled anyone, anywhere to chat with an
-                expert in a field. There were certain functional requirements to
-                begin with, but there was also a lot of room to create my own
+                expert in a field. There were certain functional requirements, 
+                but ample room to create my own
                 innovative approach. I chose to create an interior design
-                responsive web app and was the UX Researcher and Designer for
+                responsive web app and was the UX Researcher &amp; Designer for
                 the project.
               </p>
               <p>
-                I wanted to create a product that was transformative in the
-                services and experience it gave users, and to do so I put my
+                I wanted to create a product that was transformative, and to do so I put my
                 user-focused foot forward!
               </p>
               </div>
             </div>
+
+
+                <!--Roomy blurb-->
+                <div class="col-md-3 col-lg-3 col-xl-3">
+          
+                  <h4 style="text-align: left;">ROLE</h4>
+                  <p>UX/UI Designer, UX Researcher, Design Collaborator</p>
+
+                  <h4 style="text-align: left;">CONTEXT</h4>
+                  <p>Career Foundry UX Design Course</p>
+                  <p>2023</p>
+                  
+
+                  <h4 style="text-align: left;">TOOLS</h4>
+                  <p>Figma, Sketch, Pen &amp; Paper</p>
+  
+              </div>
+
           </div>
 
           
           
 
-          <!--start role/timeline overview-->
-          <div class="row">
-            <!--open row holding 3 columns-->
-            <div class="col-md-4 ">
-              <!--open 1st column holding role-->
-              <h2>Role</h2>
-              <ul>
-                <li>UX Researcher</li>
-                <li>UX Designer</li>
-                <li>Design Collaborator</li>
-              </ul>
-            </div>
-            <!--end 1st column-->
-
-            <div class="col-md-4 ">
-              <!--open 2nd column holding context/year-->
-              <h2>Context</h2>
-              <p>Career Foundry UX Design Course</p>
-              <p>2023</p>
-            </div>
-            <!--end 2nd column-->
-
-            <div class="col-md-4">
-              <!--open 3rd column holding Tool's Used-->
-              <h2>Tools used</h2>
-              <ul>
-                <li>Pen and paper</li>
-                <li>Sketch</li>
-                <li>Figma</li>
-              </ul>
-            </div>
-            <!--end 3rd column-->
-          </div>
-          <!--end row holding 3 columns-->
-
-          <!--for Design Process Heading-->
-          <div class="container row ">
-            <h2  id="dp">My Design Process</h2>
-          </div>
-
+          
           
           <!--for design process img & blurb-->
           <div class="container">
@@ -209,6 +192,11 @@
                 <p >Overview of the user-centered design process</p>
               </div>
             </div>
+          </div>
+
+
+          <div>
+            <hr>
           </div>
 
           <!--Understand & Observe Heading-->
@@ -332,6 +320,11 @@
                 />
               </picture>
               <p>insights</p>
+            </div>
+
+
+            <div>
+              <hr>
             </div>
 
 
@@ -505,6 +498,11 @@
               flows.
             </p>
          </div>
+
+
+         <div>
+          <hr>
+        </div>
 
           <!--Prototype & Test heading-->
           <div class="project-link" id="PT"> </div>
@@ -698,6 +696,11 @@
             />
           </picture>
 
+          </div>
+
+
+          <div>
+            <hr>
           </div>
 
 
@@ -1069,6 +1072,12 @@
           </div>
           <!--close row holding 3 columns-->
           </div>
+        </div>
+
+
+        <div>
+          <hr>
+        </div>
 
           <!--Thank you blurb-->
           
@@ -1083,7 +1092,6 @@
      <footer id="contact">
       <div class="container">
         <div>
-        <h2>Get in Touch</h2>
         <p>
           Do you like my work and want to discuss opportunities? Let's connect!
           Call: <a href="tel:248-759-3116 ">248-759-3116</a> </p><!--or skype me at
@@ -1104,7 +1112,7 @@
         </div>
         
          
-        <p>COPYRIGHT Miriam Desta 2023</p>
+        <p>&copy; Miriam Desta 2023</p>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>

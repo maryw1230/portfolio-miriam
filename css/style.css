@@ -535,12 +535,17 @@ main {
     transform: rotate(-1deg);
   }
   
-.work-image.feature-img {
+.pf {
+    object-fit: fill;
+    border-radius: 24px;
+    margin-right: auto;
+    transition: all .2s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, .05);
   }
   
-.work-image.feature-img:hover {
-    transform: rotate(-1deg);
+.pf:hover {
+    transform: translate(0, -6px);
+    box-shadow: 7px 7px 33px rgba(0, 0, 0, .15);
   }
 
 .row::after {

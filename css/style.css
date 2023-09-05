@@ -61,6 +61,8 @@ h4 {
     font-weight: 500;
 }
 
+
+
 .type {
     display: inline-block;
     font-size: 12px;
@@ -524,7 +526,22 @@ main {
 
 .work-image {
     width: 100%;
+    border-radius: 24px;
+    transition: all .2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .05);
 }
+
+.work-image:hover {
+    transform: rotate(-1deg);
+  }
+  
+.work-image.feature-img {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .05);
+  }
+  
+.work-image.feature-img:hover {
+    transform: rotate(-1deg);
+  }
 
 .row::after {
     content: "";
@@ -993,7 +1010,7 @@ h1 {
 }
 
 #headshot img {
-    max-width: 400px;
+    max-width: 500px;
     border-radius: 100%;
     margin: auto;
 }
@@ -1091,7 +1108,7 @@ h1 {
 @media only screen and (min-width: 1024px) {
 
 body {
-    font-size: 22px;
+    font-size: 18px;
 }
 
 main {
